@@ -1,0 +1,234 @@
+.mainMintPage {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('./../assets/images/Group\ 1.png');
+    background-size: contain;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.mintPageContent {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.tokenomics {
+    color: #6ea5f6;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.tokenomics:hover {
+    transition: 0.5s;
+    scale: 1.1;
+}
+
+/* Emoji Image Heading */
+
+.emojiImg {
+    margin-top: 20px;
+}
+
+.emojiImg img {
+    width: 30%;
+    min-width: 240px;
+}
+
+.emojiImg img:hover,
+.backIcon:hover {
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.backIcon {
+    width: 100px;
+    position: absolute;
+    margin-left: 0%;
+    top: 8%;
+}
+
+.backIcon:hover {
+    scale: 1.03;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:768px) {
+    .backIcon {
+        width: 70px;
+        top: 0%;
+    }
+    .tokenomics {
+        margin-top: 30px;
+    }
+}
+
+/* Bottom COntent  from coin to last*/
+
+.bottomContent {
+    padding: 5%;
+    padding-top: 0;
+}
+
+/* Coind Div with text and Image */
+
+.coinDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Coin Image with Div */
+
+.coinImgDiv {
+    width: 10%;
+    min-width: 100px;
+}
+
+.coinImgDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Coin Image with Div */
+
+.coinTextDiv {
+    padding-left: 15px;
+}
+
+.coinTextDiv h4 {
+    color: white;
+    text-align: left;
+}
+
+.coinCOde {
+    word-break: break-word;
+}
+
+/* MAIN DIV of all bxes and bars  */
+
+.barsAndHeadingsBoxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.allBars-right,
+.allHeadingWithTextBoxes-left {
+    width: 45%;
+}
+
+/* Bar */
+
+.barDiv {
+    width: 100%;
+    text-align: left;
+}
+
+.percentDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.percentText {
+    margin-right: 20px;
+}
+
+.barDiv h4 {
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.barDiv img {
+    width: 100%;
+    height: 50px;
+    margin-top: -10px;
+}
+
+/* Styling Text and Boxes */
+
+.allHeadingWithTextBoxes-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.allHeadingWithTextBoxes-left div {
+    text-align: left;
+    width: 48%;
+}
+
+.presaleBox,
+.presalePrice {
+    margin-top: 50px;
+}
+
+.allHeadingWithTextBoxes-left div h2 {
+    color: #f3da21;
+    font-size: 26px;
+}
+
+.allHeadingWithTextBoxes-left div p {
+    color: white;
+    padding-top: 13px;
+}
+
+/* managing Mobile View */
+
+@media only screen and (max-width:768px) {
+    /* Managing Dont sizes */
+    .coinTextDiv h4,
+    .allHeadingWithTextBoxes-left {
+        font-size: 14px;
+    }
+    .allHeadingWithTextBoxes-left div h2 {
+        font-size: 22px;
+    }
+    .barDiv h4 {
+        font-size: 18px;
+    }
+    .barDiv img {
+        width: 100%;
+        height: 35px;
+        margin-top: -10px;
+    }
+    /*  */
+    .barsAndHeadingsBoxes {
+        flex-direction: column;
+    }
+    .allBars-right,
+    .allHeadingWithTextBoxes-left {
+        width: 100%;
+    }
+    .allBars-right {
+        margin-top: 45px;
+    }
+    .allHeadingWithTextBoxes-left {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .presaleBox,
+    .presalePrice {
+        margin-top: 0px;
+    }
+    .allHeadingWithTextBoxes-left div {
+        text-align: left;
+        margin: 10px auto;
+        width: 65%;
+        text-align: center;
+    }
+    .allHeadingWithTextBoxes-left div p {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .allHeadingWithTextBoxes-left div {
+        width: 85%;
+    }
+}
